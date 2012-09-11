@@ -11,7 +11,7 @@
 # Sample Usage:
 #  include yum-priorities
 #
-class yum-priorities {
+class yum_priorities {
 
     $yum_priorities = $lsbmajdistrelease ? {
       /4|6/	=> 'yum-plugin-priorities',
