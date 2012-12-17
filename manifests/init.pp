@@ -13,7 +13,7 @@
 #
 class yum_priorities {
 
-    $yum_priorities = $lsbmajdistrelease ? {
+    $yum_priorities = $major_version ? {
       /4|6/	=> 'yum-plugin-priorities',
       '5'		=> 'yum-priorities',
     }
